@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+body{
+    height: 100vh;
+    background-image: linear-gradient(hsl(273, 75%, 66%),hsl(240, 73%, 65%));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
+
+.images{
+    overflow: hidden;
+}
+
+.container{
+    background-image: url("images/bg-pattern-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: -565px -300px;
+    /* height: 500px; */
+    /* background-size: 300px; */
+    background-color: #fff;
+    display: flex;
+    padding: 3.5rem;
+    border-radius: 20px;
+    padding-left: 0;
+    width: 55rem;
+}
+
+.heading{
+    margin-bottom: 1rem;
+}
+
+.box{
+    position: absolute;
+    top: 42%;
+    z-index: 1;
+    left: 160px;
+}
+
+.women-desktop{
+    position: relative;
+    right: 80px;
+}
+
+.answer{
+    height: 0px;
+    overflow: hidden;
+    width: 320px;
+    transition: height 1s;
+
+}
+
+.visible{
+    /* display: block; */
+    height: 2.8rem;
+}
+
+.question{
+    width: 20rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.question:hover ~ .box{
+    left: 130px
+}
+
+.question:hover{
+    color: hsl(14, 88%, 65%);
+}
+
+.content div{
+    border-bottom: 1px solid hsl(240, 5%, 91%);
+
+}
+
+.arrow{
+    transition: transform 1s;
+}
+
+.rotate{
+    transform: rotate(180deg);
+}
